@@ -14,6 +14,7 @@ public class GithubController {
         studentList.add(new Student(1L,"shahbaz"));
         studentList.add(new Student(2L,"nawaz"));
         studentList.add(new Student(3L,"syed"));
+        studentList.add(new Student(4L,"test"));
     }
 
     @GetMapping
