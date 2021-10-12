@@ -12,11 +12,13 @@ spec:
       labels:
         app: azuregithub
     spec:
+      terminationGracePeriodSeconds: 120
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
         - name: azuregithub
           image: nawazregistry.azurecr.io/azuregithub:latest
+          imagePullPolicy: Always
           resources:
             requests:
               cpu: 100m
