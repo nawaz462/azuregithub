@@ -11,8 +11,9 @@ public class GithubController {
 
     private static List<Student> studentList = new ArrayList<>();
     static {
-        studentList.add(new Student(1L,"syed"));
+        studentList.add(new Student(1L,"shahbaz"));
         studentList.add(new Student(2L,"nawaz"));
+        studentList.add(new Student(3L,"syed"));
     }
 
     @GetMapping
